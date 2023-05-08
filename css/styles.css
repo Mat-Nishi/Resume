@@ -119,7 +119,7 @@ nav ul {
     align-items: center;
     justify-content: center;
     flex:1;
-    margin-left: 10rem;
+    margin-left: 0.5rem;
     margin-right: 0.5rem;
     background: linear-gradient(
       to right bottom,
@@ -131,7 +131,67 @@ nav ul {
       box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.3)
     }
 
+    .skills-banner-left{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex:1;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      overflow: hidden;
+      }
+
+      .skills-card{
+        overflow: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.1),
+        rgba(255,255,255,0.03)
+        );
+        border-radius: 1rem;
+        box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.3);
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      .skills-card h1{
+        color: rgb(200, 200, 200);
+        flex-basis: 100%;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .abilities-card{
+        background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.1),
+        rgba(255,255,255,0.03)
+        );
+        border-radius: 1rem;
+        box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.3);
+        margin-top: 0.5rem;
+      }
+
+      .abilities-card h1{
+        color: rgb(200, 200, 200);
+        flex-basis: 100%;
+        text-align: center;
+        padding: 1rem;
+      }
+
     .banner-left h1{
+      color: rgb(200, 200, 200);
+      overflow: auto;
+      max-width: 100%;
+    }
+
+    .skills-banner-right h1{
       color: rgb(200, 200, 200);
       overflow: auto;
       max-width: 100%;
@@ -139,7 +199,7 @@ nav ul {
     
     .banner-right{
       flex:1;
-      margin-right: 10rem;
+      margin-right: 0.5rem;
       margin-left: 0.5rem;
       background: linear-gradient(
       to right bottom,
@@ -152,6 +212,24 @@ nav ul {
       overflow: auto;
       max-height: 100%;
       box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.3)
+    }
+
+    .skills-banner-right{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255,255,255,0.03)
+      );
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.3)
     }
     
     .banner-right p{
@@ -340,3 +418,69 @@ nav ul {
     max-height: 1rem;
   }
   
+/* skills styling*/
+
+.skill{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 20rem;
+}
+
+.skill span{
+  font-size: 1.3rem;
+  width: 35%;
+}
+
+.skill-bar {
+  background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255,255,255,0.03)
+      );
+  width: 65%;
+  height: 22px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(88, 216, 212, 0.1),
+    rgba(88, 216, 212, 0.25) 10px,
+    rgba(255, 255, 255, 0) 10px,
+    rgba(255, 255, 255, 0) 20px
+  );
+  border-radius: 10px 0 0 10px;
+}
+.progress-1 {
+  width: 80%; 
+}
+
+.progress-2 {
+  width: 45%;
+}
+
+.progress-3 {
+  width: 60%;
+}
+
+.progress-4 {
+  width: 60%; 
+}
+
+.progress-5 {
+  width: 85%; 
+}
+
+.progress-6 {
+  width: 75%;
+}
+
+.skill-name {
+  text-align: left;
+  margin-right: 10px;
+  color: rgb(200, 200, 200)
+}
