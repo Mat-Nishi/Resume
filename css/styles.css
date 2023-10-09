@@ -173,9 +173,18 @@ nav ul {
         rgba(255, 255, 255, 0.1),
         rgba(255,255,255,0.03)
         );
+        width: 100%;
         border-radius: 1rem;
         box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.3);
         margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .abilities-table{
+        width: 85%;
+        margin-bottom: 2rem ;
       }
 
       .abilities-card h1{
@@ -183,6 +192,10 @@ nav ul {
         flex-basis: 100%;
         text-align: center;
         padding: 1rem;
+      }
+
+      .abilities-table td{
+        width: 50%;
       }
 
     .banner-left h1{
@@ -222,6 +235,7 @@ nav ul {
     flex:1;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
+    padding: 1rem;
     background: linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.1),
@@ -230,6 +244,16 @@ nav ul {
       border-radius: 1rem;
       overflow: hidden;
       box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.3)
+    }
+
+    .skills-banner-right p{
+      font-size: 1.3rem;
+      color: rgb(200, 200, 200);
+      margin: 1rem;
+    }
+
+    .acomplishments{
+      margin: .5rem 1rem 0 1rem;
     }
     
     .banner-right p{
@@ -340,6 +364,9 @@ nav ul {
   .content-text{
     padding: 0.5rem;
   }
+  strong{
+    font-size: 1.2rem;
+  }
 
   .box-left{
     margin-left: 5rem;
@@ -420,6 +447,8 @@ nav ul {
   
 /* skills styling*/
 
+
+
 .skill{
   padding: 10px;
   display: flex;
@@ -460,7 +489,7 @@ nav ul {
 }
 
 .progress-2 {
-  width: 45%;
+  width: 35%;
 }
 
 .progress-3 {
